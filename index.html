@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Coding Portfolio</title>
+
+    <!-- Bulma CSS framework (https://bulma.io) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+
+    <script src="code/1-future-job.js"></script>
+    <script src="code/2-subject-list.js"></script>
+    <script src="code/3-number-search.js"></script>
+    <script src="code/4-subject-details.js"></script>
+  </head>
+
+  <body>
+    <header class="hero is-info">
+      <div class="hero-body">
+        <h1 class="title">Collections</h1>
+        <h2 class="subtitle">Storing more complex data in variables.</h2>
+      </div>
+    </header>
+
+    <main class="section">
+      <h2 class="subtitle">Collections</h2>
+
+      <div class="columns">
+
+         <div class="column">
+          <h3 class="subtitle"> 1 - Future Job <em>(Array Intro)</em> </h3> 
+          <button class="button is-light is-danger" onclick="getJob()"> What will my job be? </button>
+         </div>
+
+         <div class="column">
+           <h3 class="subtitle"> 2 - Subject List <em>(Array Add/Delete)</em> </h3> 
+           <button class="button is-light is-success" onclick="showSubjects()"> Show Subjects </button>
+           <button class="button is-light is-danger" onclick="addSubject()"> Add Subject </button>
+           <button class="button is-light is-danger" onclick="removeSubject()"> Remove Subject </button>
+         </div>
+
+         <div class="column">
+           <h3 class="subtitle"> 3 - Number Search <em>(Array Loop)</em> </h3> 
+           <button class="button is-light is-danger" onclick="searchNumbers()"> Search for a number </button>
+         </div>
+
+         <div class="column">
+           <h3 class="subtitle"> 4 - Subject Details <em>(Objects Intro)</em> </h3> 
+           <button class="button is-light is-danger" onclick="showSubject()"> Show Subject </button>
+           <button class="button is-light is-danger" onclick="changeSubject()"> Change Subject </button>
+           <button class="button is-light is-danger" onclick="changeTeacher()"> Change Teacher </button>
+         </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Coding Portfolio</strong> template by <a href="https://github.com/MrHullen">Mr Hullen</a>
+        </p>
+        <p>
+          &copy; <a href="https://craighead.school.nz">Craighead Diocesan School</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+
+  <style>
+    button {
+      display: block !important;
+      margin-top: 0.5em;
+    }
+  </style>
+</html>
