@@ -3,24 +3,36 @@
 // ####################################
 
 let subjects = [
-  'English',
-  'Digital Technology',
+  ' English',
+  ' Digital Technology',
+  ' Maths',
+  ' English',
 ]
 
 function showSubjects() {
   alert(subjects)
 }
 
+
+
+
 function addSubject() {
-  let newSubject = 'Maths'
+
+  let newSubject = prompt('What subject do you want to add to the array?')
+  // let newSubject = 'Maths'
 
   // add a new item to the end of the subjects array
   subjects.push(newSubject)
 }
 
+
+
+
+
+
 function removeSubject() {
   let index = 0
-
+  let removeSubject = prompt('Which index do you want to delete from the array?')
   // remove 1 item at the index position of the subjects array
   subjects.splice(index, 1)
 }
