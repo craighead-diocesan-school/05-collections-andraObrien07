@@ -6,7 +6,7 @@ let subjects = [
   ' English',
   ' Digital Technology',
   ' Maths',
-  ' English',
+  ' Science',
 ]
 
 function showSubjects() {
@@ -34,5 +34,6 @@ function removeSubject() {
   let index = 0
   let removeSubject = prompt('Which index do you want to delete from the array?')
   // remove 1 item at the index position of the subjects array
-  subjects.splice(index, 1)
+  subjects.splice(index, removeSubject)
 }
+// Math.floor(Math.random() * 5)
