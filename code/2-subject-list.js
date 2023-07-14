@@ -18,9 +18,12 @@ function showSubjects() {
 
 function addSubject() {
 
-  let newSubject = prompt('What subject do you want to add to the array?')
+  // while(newSubject =! 'yes')
+  // let newSubject = prompt('What subject do you want to add to the array?')
   // let newSubject = 'Maths'
-
+  while (newSubject = ! 'yes') {
+    let newSubject = prompt('What subject do you want to add to the array?')
+  }
   // add a new item to the end of the subjects array
   subjects.push(newSubject)
 }
