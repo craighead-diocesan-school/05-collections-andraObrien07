@@ -18,14 +18,13 @@ function showSubjects() {
 
 function addSubject() {
 
-  // while(newSubject =! 'yes')
-  // let newSubject = prompt('What subject do you want to add to the array?')
-  // let newSubject = 'Maths'
-  while (newSubject = ! 'yes') {
-    let newSubject = prompt('What subject do you want to add to the array?')
+  let newSubject = prompt('What subject do you want to add to the array?')
+  while (newSubject != 'stop') {
+
+    subjects.push(newSubject)
+
+    newSubject = prompt('What subject do you want to add to the array?')
   }
-  // add a new item to the end of the subjects array
-  subjects.push(newSubject)
 }
 
 
@@ -34,9 +33,14 @@ function addSubject() {
 
 
 function removeSubject() {
-  let index = 0
-  let removeSubject = prompt('Which index do you want to delete from the array?')
+
   // remove 1 item at the index position of the subjects array
-  subjects.splice(index, removeSubject)
+  let index = prompt('Which index do you want to delete from the array?')
+
+  let arrayLength = subjects.length
+  if (index >= arrayLength) {
+    alert('error, please insert a digit')
+  } else {
+    subjects.splice(index, 1)
+  }
 }
-// Math.floor(Math.random() * 5)
