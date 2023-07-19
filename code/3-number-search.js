@@ -15,21 +15,28 @@ let numberArray = [
 ]
 
 function searchNumbers() {
-  let ask = prompt('What number do you want to search the array for?')
+  let searchTarget = prompt('What number do you want to search the array for?')
 
 
-  let searchTarget = 1
+  // let searchTarget = 1
 
-  // let searchResult = false
+  let searchResult = false
 
   for (let currentNumber of numberArray) {
-    if (currentNumber == searchTarget) {
+    if (currentNumber == Number(searchTarget)) {
       searchResult = true
     }
     // else if (currentNumber != searchTarget) {
     //   searchResult = false
-    // }
+
+    // alert(searchTarget + ' found: ' + searchResult)
   }
 
+  if (searchResult) {
+    alert(searchTarget + 'is here')
+  }
+  else {
+    alert(searchTarget + 'is not here')
+  }
   alert(searchTarget + ' found: ' + searchResult)
 }
