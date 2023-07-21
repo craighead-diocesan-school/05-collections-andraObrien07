@@ -17,19 +17,13 @@ let numberArray = [
 function searchNumbers() {
   let searchTarget = prompt('What number do you want to search the array for?')
 
-
-  // let searchTarget = 1
-
   let searchResult = false
 
   for (let currentNumber of numberArray) {
     if (currentNumber == Number(searchTarget)) {
       searchResult = true
     }
-    // else if (currentNumber != searchTarget) {
-    //   searchResult = false
 
-    // alert(searchTarget + ' found: ' + searchResult)
   }
 
   if (searchResult) {
