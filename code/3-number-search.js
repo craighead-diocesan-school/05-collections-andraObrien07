@@ -23,7 +23,6 @@ function searchNumbers() {
     if (currentNumber == Number(searchTarget)) {
       searchResult = true
     }
-
   }
 
   if (searchResult) {
